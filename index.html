@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title> Challenge | Alura & ONE </title>    
+</head>
+<body>
+    <main>        
+        <div class="icone-alura">
+            <a href="https://cursos.alura.com.br/user/" target="_blank"> <img src="images/alura.svg" class="logo_alura" alt="Logo da Alura"></a>
+        </div>
+        <div class="central_bar">
+            <textarea onkeyup="checkText(event)" class="input_text" placeholder="Digite seu texto aqui..."></textarea>
+
+            <div class="container_buttons">
+                <span>
+                    <img src="images/small_alert.svg" class="small_alert" alt="Círculo com ponto de exclamação dentro">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </span>
+                <div class="buttons">
+                    <button class="encrypt" onclick="btnEncrypt(),removeRightSideBar()">Criptografar</button>
+                    <button class="decrypt" onclick="btnDecrypt()">Descriptografar</button>
+                </div>
+            </div>
+        </div>        
+        <div class="right_side_bar">
+            <img src="images/search.svg" class="search_image" alt="Mulher segurando lupa" >
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite à esquerda um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+        <div class="right_side_bar_output" style="display: none;">
+            <textarea class="output_text"></textarea>
+            <button onclick="copy()" class="copy">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a class="apresentacao__links__navegacao" href="https://github.com/IccaroOliveira" target="_blank">
+                 <img src="./images/github.png">
+                  Github
+            </a>
+            <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/iccarooliveira" target="_blank">
+                  <img src="./images/linkedin.png">
+                  linkedin
+            </a>
+            <p>Desenvolvido por Iccaro Oliveira</p>
+        </div>       
+    </footer>
+</body>
+<script src="scripts/script.js"></script>
+</html>
